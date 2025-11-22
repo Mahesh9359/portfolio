@@ -124,7 +124,7 @@ const About: React.FC = () => {
                     Master of Computer Applications
                   </h3>
                   <p className="text-purple-600 font-medium">
-                    D. Y. Patil Institute, Akurdi
+                    D. Y. Patil Institute of MCA, Akurdi
                   </p>
                   <p className="text-gray-600 text-sm">
                     2023 - 2025 | 7.50 CGPA
@@ -144,7 +144,7 @@ const About: React.FC = () => {
                     B.Sc (Computer Science)
                   </h3>
                   <p className="text-blue-600 font-medium">
-                    Rajarshi Shahu Mahavidyalaya
+                    Rajarshi Shahu Mahavidyalaya,, Deolali Pravara
                   </p>
                   <p className="text-gray-600 text-sm">
                     2020 - 2023 | 8.47 CGPA
