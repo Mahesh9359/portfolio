@@ -107,7 +107,7 @@ const Navigation: React.FC = () => {
 
             {/* GitHub Fork Button */}
             <a
-              href="https://github.com/"
+              href="https://github.com/Mahesh9359"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-all duration-300 transform hover:scale-105"
@@ -168,7 +168,7 @@ const Navigation: React.FC = () => {
 
             {/* Mobile GitHub Button */}
             <a
-              href="https://github.com/"
+              href="https://github.com/Mahesh9359"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-all duration-300"
