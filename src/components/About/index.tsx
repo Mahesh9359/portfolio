@@ -144,7 +144,7 @@ const About: React.FC = () => {
                     B.Sc (Computer Science)
                   </h3>
                   <p className="text-blue-600 font-medium">
-                    Rajarshi Shahu Mahavidyalaya,, Deolali Pravara
+                    Rajarshi Shahu Mahavidyalaya, Deolali Pravara
                   </p>
                   <p className="text-gray-600 text-sm">
                     2020 - 2023 | 8.47 CGPA
