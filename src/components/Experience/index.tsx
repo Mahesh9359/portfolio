@@ -21,7 +21,7 @@ const experiences = [
 
 const Experience: React.FC = () => {
   return (
-    <section className="relative min-h-screen py-20 px-6 md:px-12 bg-white overflow-hidden">
+    <section className="relative min-h-screen py-20 px-6 md:px-12 overflow-hidden">
       {/* Particle Background */}
       <Particle />
 
