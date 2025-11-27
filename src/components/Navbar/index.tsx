@@ -73,7 +73,7 @@ const Navigation: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Brand/Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
-            <span className="text-2xl  md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent flex items-center gap-2">&lt;/&gt;</span>
+            <span className="text-2xl  md:text-2xl font-bold bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent flex items-center gap-2">&lt;/&gt;</span>
             <div className="flex flex-col">
               <span className="font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
                 Mahesh Jadhav
@@ -107,7 +107,7 @@ const Navigation: React.FC = () => {
 
             {/* GitHub Fork Button */}
             <a
-              href="https://github.com/"
+              href="https://github.com/Mahesh9359"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-1 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition-all duration-300 transform hover:scale-105"
@@ -168,7 +168,7 @@ const Navigation: React.FC = () => {
 
             {/* Mobile GitHub Button */}
             <a
-              href="https://github.com/"
+              href="https://github.com/Mahesh9359"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-all duration-300"

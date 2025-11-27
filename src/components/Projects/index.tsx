@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
       title: "Hunger Cart",
       description:
         "Built a responsive food ordering web app allowing customers to browse menus and place online orders. Developed using Next.js, Redux Toolkit, Tailwind CSS, NextAuth, Node.js, and MongoDB. Implemented cart management and Google sign in.",
-      ghLink: "https://github.com/Mahesh9359/FoodPanda",
+      ghLink: "https://github.com/Mahesh9359/hungercart",
       demoLink: "https://hungercart.vercel.app/" 
     },
     {
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="relative min-h-screen py-20 overflow-hidden bg-white">
+    <section className="relative min-h-screen py-20 overflow-hidden">
       <Particle />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

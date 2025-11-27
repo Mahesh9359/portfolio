@@ -57,36 +57,35 @@ const FooterInteractive: React.FC = () => {
     });
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  try {
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    const data = await res.json();
+      const data = await res.json();
 
-    if (!res.ok) {
-      console.error('Send failed:', data);
-      // Optionally show an error notification to user
-      alert(data?.error || 'Failed to send message');
-    } else {
-      setIsSubmitted(true);
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setIsSubmitted(false), 5000);
+      if (!res.ok) {
+        console.error("Send failed:", data);
+        // Optionally show an error notification to user
+        alert(data?.error || "Failed to send message");
+      } else {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setIsSubmitted(false), 5000);
+      }
+    } catch (err) {
+      console.error("Network error:", err);
+      alert("Network error. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
     }
-  } catch (err) {
-    console.error('Network error:', err);
-    alert('Network error. Please try again later.');
-  } finally {
-    setIsSubmitting(false);
-  }
-};
-
+  };
 
   return (
     <footer className="relative bg-linear-to-br from-gray-900 via-purple-900 to-black text-white pt-16 pb-8 border-t border-purple-500/20 overflow-hidden">
@@ -102,9 +101,7 @@ const handleSubmit = async (e: React.FormEvent) => {
           <div className="lg:col-span-4 text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start space-x-4 mb-6">
               <div className="relative">
-                <div className="w-14 h-14 bg-linear-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg shadow-purple-500/25">
-                  <FaRegSmile className="text-white text-2xl" />
-                </div>
+                <span className="text-3xl md:text-3xl font-bold bg-linear-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent flex items-center gap-2">&lt;/&gt;</span>
               </div>
               <div>
                 <h3 className="text-2xl font-bold bg-linear-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
@@ -114,8 +111,9 @@ const handleSubmit = async (e: React.FormEvent) => {
               </div>
             </div>
             <p className="text-gray-400 text-lg leading-relaxed mb-6 max-w-md">
-              Passionate MCA student crafting digital experiences with modern
-              web technologies, blockchain, and innovative solutions.
+              A passionate Full-Stack and Front-End Developer dedicated to
+              crafting modern, user-friendly, and performance-driven digital
+              experiences.
             </p>
 
             <div className="flex flex-col items-center sm:items-start mb-8">
@@ -158,12 +156,12 @@ const handleSubmit = async (e: React.FormEvent) => {
                 {
                   icon: AiOutlineMail,
                   text: "maheshjadhav9359@gmail.com",
-                  href: "mailto:jadhavmahesh3329@gmail.com",
+                  href: "mailto:maheshjadhav9359@gmail.com",
                 },
                 {
                   icon: AiOutlinePhone,
                   text: "+91 9359613329",
-                  href: "tel:+9193596123456",
+                  href: "tel:+919359613329",
                 },
               ].map((link, index) => (
                 <a
@@ -182,9 +180,8 @@ const handleSubmit = async (e: React.FormEvent) => {
           {/* Contact Form */}
           <div className="lg:col-span-5">
             <h4 className="text-xl font-semibold text-white mb-6 flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start space-x-2 text-center sm:text-left">
-  <span>Get In Touch</span>
-</h4>
-
+              <span>Get In Touch</span>
+            </h4>
 
             {isSubmitted ? (
               <div className="bg-linear-to-r from-green-500/10 to-emerald-500/10 border border-green-500/30 rounded-2xl p-6 text-center backdrop-blur-sm">
@@ -261,17 +258,10 @@ const handleSubmit = async (e: React.FormEvent) => {
           {/* Bottom Bar */}
           <div className="flex flex-col items-center justify-center text-center space-y-2">
             {/* Copyright */}
-            <div>
-              <p className="text-gray-400 text-sm">
-                © {currentYear} Mahesh Jadhav. Crafted with passion and
-                precision.
-              </p>
-              <p className="text-gray-500 text-xs mt-1 flex items-center justify-center space-x-1">
-                <span>Built with</span>
-                <span className="text-red-400">❤️</span>
-                <span>, Next.js, TypeScript, and Tailwind CSS</span>
-              </p>
-            </div>
+            <p className="text-gray-400 text-sm">
+              © {currentYear} Mahesh Jadhav — Crafted with ❤️ using Next.js,
+              TypeScript & Tailwind CSS.
+            </p>
           </div>
         </div>
       </div>
