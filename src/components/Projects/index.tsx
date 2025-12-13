@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
       title: "Hotel Management System",
       description:
         "Developed a hotel management system using HTML, CSS, JavaScript, and React,node js, Mongo DB. The system allows room booking, user registration, and management of guest details with a user-friendly interface and responsive design.",
-      ghLink: "https://github.com/yourusername/hotel-management-system",
+      ghLink: "https://github.com/Mahesh9359/hotel-management-system",
       demoLink: "https://hotel-sunshine.vercel.app/"
     },
     {
@@ -48,8 +48,8 @@ const Projects: React.FC = () => {
       title: "MinuteMart",
       description:
         "Built an online grocery management system using PHP, JavaScript, AJAX, SQL. Implemented product management, cart operations, Payment feature and a dynamic order placement workflow with real-time cart updates for enhanced user experience.",
-      ghLink: "https://github.com/yourusername/minutemart", 
-      demoLink: "https://grocery-store-v21k.onrender.com/" 
+      ghLink: "https://github.com/Mahesh9359/minute-mart", 
+      demoLink: "https://minutemart.infinityfreeapp.com/" 
     }
   ];
 
