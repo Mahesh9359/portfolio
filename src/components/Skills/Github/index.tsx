@@ -34,8 +34,16 @@ const Github: React.FC = () => {
                 theme={{
                   light: ['#f0f0f0', '#e2d4ff', '#c9a8ff', '#b084f5', '#8a56e8'],
                 }}
-                year={new Date().getFullYear()}
+                transformData={(contributions) => {
+                  const oneYearAgo = new Date();
+                  oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
+              
+                  return contributions.filter((day) => {
+                    return new Date(day.date) >= oneYearAgo;
+                  });
+                }}
               />
+
             ) : (
               <div className="w-[600px] h-[120px] bg-gray-100 rounded-lg animate-pulse"></div>
             )}
